@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- It's now possible to obtain the access point info of the currently connected AP, by using `WifiController::ap_info(&self)` (#4405)
+- `ble::mac` to get the MAC address of the device (#4485)
+- `last_calibration_result` to get the result of the last calibration (#4479)
+- `BleInitError` for BLE init failures and `Internal`, `WrongClockConfig`, `SchedulerNotInitialized` and `Adc2IsUsed` variants to `WifiError (#4482)
+- `wifi::csi::WifiCsiInfo` wraps `wifi::wifi_csi_info_t` (#4643)
+- `WifiController::set_channel()`, `WifiController::channel()` `WifiController::set_bandwidth()`, `WifiController::bandwidth()` methods and `Bandwidth` enum (#4705)
+- Exposed types necessary to configure the ble `Config` structure. (#4764)
 
 ### Changed
 
